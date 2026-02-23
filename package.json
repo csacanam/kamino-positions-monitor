@@ -1,0 +1,20 @@
+{
+  "name": "monitoring-solana-funds",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "kamino_monitor.js",
+  "scripts": {
+    "start": "node kamino_monitor.js",
+    "monitor": "node kamino_monitor.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.4",
+    "dotenv": "^17.3.1"
+  }
+}

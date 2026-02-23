@@ -1,0 +1,9 @@
+{
+  "wallets": [
+    { "name": "Fund 1", "address": "YOUR_SOLANA_WALLET_ADDRESS_1" },
+    { "name": "Fund 2", "address": "YOUR_SOLANA_WALLET_ADDRESS_2" }
+  ],
+  "thresholds": { "green": 1.6, "yellow": 1.35, "orange": 1.2 },
+  "onlyMainMarket": true,
+  "walletDelayMs": 300
+}
