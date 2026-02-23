@@ -130,23 +130,21 @@ Output goes to stdout. When run via OpenClaw, the agent delivers the report to y
 
 ## OpenClaw Skill
 
-To use this monitor as an [OpenClaw](https://openclaw.ai) skill (so any APU/agent can run it):
+Use this monitor as an [OpenClaw](https://openclaw.ai) skill so your agent can run it on request.
 
-1. Copy the skill to OpenClaw:
+**Prerequisite:** You need the full project (this repo) installed and configured—the skill tells the agent how to run the script, but the script lives here.
+
+**Install the skill** (pick one):
+
+1. **From this repo** (after cloning and completing Setup above):
    ```bash
    cp -r openclaw-skill ~/.openclaw/skills/kamino-positions-monitor
    ```
 
-2. Or install via ClawHub (once published):
-   ```bash
-   clawhub install kamino-positions-monitor
-   ```
+2. **From ClawHub** (once published): `clawhub install kamino-positions-monitor`  
+   You still need to clone this repo and configure it—the skill alone does not include the monitor script.
 
-3. Run from the project directory, or set `KAMINO_MONITOR_PATH` to the project path in your env
-
-4. Ask your agent: "Run the Kamino positions monitor" or "Check my Kamino liquidation risk"
-
-The skill teaches the agent when and how to run the monitor. See `openclaw-skill/SKILL.md` for details.
+**Run:** Open OpenClaw from this project directory, or set `KAMINO_MONITOR_PATH` to the project path. Then ask: "Run the Kamino positions monitor" or "Check my Kamino liquidation risk".
 
 ## Security
 
